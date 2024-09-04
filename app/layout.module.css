@@ -1,0 +1,16 @@
+.root {
+  display: flex;
+  margin: 1rem auto;
+  justify-content: center;
+  gap: 1rem;
+  width: 720px;
+  max-width: 100vw;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+}
+.title {
+  flex: 100%;
+}
+.main {
+  flex: 1;
+}

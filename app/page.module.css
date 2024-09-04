@@ -1,0 +1,33 @@
+.root {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+@media screen and (max-width: 699px) {
+  .root {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 499px) {
+  .root {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+}
+.buttonProgress {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  gap: 0.5rem;
+}
+.buttonProgressText {
+  --bulma-block-spacing: 0;
+}
+.buttonProgress progress {
+  flex: 1;
+}
