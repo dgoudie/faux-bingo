@@ -1,0 +1,45 @@
+.card:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.card {
+  --bulma-box-background-color: var(--bulma-background-hover);
+  --bulma-hr-background-color: var(--bulma-background-active);
+  --bulma-box-shadow: none;
+}
+
+.card hr {
+  margin: 1rem 0;
+}
+
+.card.isDone {
+  --bulma-box-background-color: var(--bulma-success-soft);
+  --bulma-hr-background-color: var(--bulma-success);
+}
+
+.card.isLocked {
+  --bulma-box-background-color: var(--bulma-background);
+  --bulma-hr-background-color: var(--bulma-background-active);
+}
+
+.lock {
+  color: var(--bulma-danger);
+  cursor: help;
+}
+
+.dialog {
+  background-color: var(--bulma-background);
+  border: none;
+  border-radius: var(--bulma-radius);
+  color: var(--bulma-text);
+  width: 500px;
+}
+
+.dialog::backdrop {
+  background-color: hsla(
+    var(--bulma-scheme-h),
+    var(--bulma-scheme-s),
+    var(--bulma-scheme-invert-l),
+    0.86
+  );
+}
