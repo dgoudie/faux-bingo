@@ -16,19 +16,4 @@ export const teams = [
     members: ['Player 7', 'Player 8', 'Player 9'],
     points: 20,
   },
-  {
-    name: 'Team 4',
-    members: ['Player 10', 'Player 11', 'Player 12'],
-    points: 10,
-  },
-  {
-    name: 'Team 5',
-    members: ['Player 13', 'Player 14', 'Player 15'],
-    points: 49,
-  },
-  {
-    name: 'Team 6',
-    members: ['Player 16', 'Player 17', 'Player 18'],
-    points: 1,
-  },
 ];

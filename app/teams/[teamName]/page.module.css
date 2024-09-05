@@ -1,0 +1,40 @@
+.root {
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+@media screen and (max-width: 899px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.card:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.card {
+  --bulma-box-background-color: var(--bulma-background-hover);
+  --bulma-hr-background-color: var(--bulma-background-active);
+  --bulma-box-shadow: none;
+}
+
+.card hr {
+  margin: 1rem 0;
+}
+
+.card.isDone {
+  --bulma-box-background-color: var(--bulma-success-soft);
+  --bulma-hr-background-color: var(--bulma-success);
+}
+
+.card.isLocked {
+  --bulma-box-background-color: var(--bulma-background);
+  --bulma-hr-background-color: var(--bulma-background-active);
+}
+
+.lock {
+  color: var(--bulma-danger);
+  cursor: help;
+}

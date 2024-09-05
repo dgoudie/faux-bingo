@@ -21,8 +21,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
+      <head>
+        <link
+          href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=optional'
+          rel='stylesheet'
+        />
+      </head>
       <body className={classNames(inter.className, styles.root)}>
-        <h1 className={classNames('title', styles.title)}>Faux Bingo</h1>
+        <h1 className={classNames('title', styles.title)}>
+          Faux Bingo<hr className={styles.hr}></hr>
+        </h1>
+
         <SideBar />
         <div className={styles.main}>{children}</div>
       </body>
